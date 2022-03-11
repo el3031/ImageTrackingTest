@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5519970155780596763
+  m_GuidHigh: 194366629486258306
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5650591833150289512
+      m_GuidHigh: 12801453584671139248
+    m_SerializedTextureGuid:
+      m_GuidLow: 10707914634692041767
+      m_GuidHigh: 17628244275190922328
+    m_Size: {x: 0.03, y: 0.039941087}
+    m_SpecifySize: 1
+    m_Name: slab
+    m_Texture: {fileID: 2800000, guid: 96069c2727a0949a587c9114c51aa4f4, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4832164219802371393
+      m_GuidHigh: 5070558824024652673
+    m_SerializedTextureGuid:
+      m_GuidLow: 2641416610197522903
+      m_GuidHigh: 7898457038943311738
+    m_Size: {x: 0.03, y: 0.032268908}
+    m_SpecifySize: 1
+    m_Name: cube
+    m_Texture: {fileID: 2800000, guid: 82a3c9d7326924a87a57e63fd4f49c6d, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4648408046288033569
+      m_GuidHigh: 14931235903567913135
+    m_SerializedTextureGuid:
+      m_GuidLow: 16429617776004862750
+      m_GuidHigh: 15478420687372981305
+    m_Size: {x: 0.03, y: 0.022499999}
+    m_SpecifySize: 1
+    m_Name: stones
+    m_Texture: {fileID: 2800000, guid: c636931eba51e4013994ec629b65ced6, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4801085019015434430
+      m_GuidHigh: 6729403807388283579
+    m_SerializedTextureGuid:
+      m_GuidLow: 14148903433964130019
+      m_GuidHigh: 7716267031109221288
+    m_Size: {x: 0.03, y: 0.016874999}
+    m_SpecifySize: 1
+    m_Name: capybaras
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5573218189399074987
+      m_GuidHigh: 3646301894424549508
+    m_SerializedTextureGuid:
+      m_GuidLow: 293009300041323465
+      m_GuidHigh: 992711113451485274
+    m_Size: {x: 0.03, y: 0.01996875}
+    m_SpecifySize: 1
+    m_Name: sausagedog
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5605492979030486287
+      m_GuidHigh: 2016453877139003546
+    m_SerializedTextureGuid:
+      m_GuidLow: 14146730777173704153
+      m_GuidHigh: 18151223127941560042
+    m_Size: {x: 0.03, y: 0.015022692}
+    m_SpecifySize: 1
+    m_Name: meselfies
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5114207865026627245
+      m_GuidHigh: 1697222955814143648
+    m_SerializedTextureGuid:
+      m_GuidLow: 3808239568548202009
+      m_GuidHigh: 2177060881012295321
+    m_Size: {x: 0.03, y: 0.05355372}
+    m_SpecifySize: 1
+    m_Name: quote
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5729654610051459362
+      m_GuidHigh: 16413396951226853295
+    m_SerializedTextureGuid:
+      m_GuidLow: 17583567346214771160
+      m_GuidHigh: 6979298241111412457
+    m_Size: {x: 0.03, y: 0.041517857}
+    m_SpecifySize: 1
+    m_Name: selfie
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5635125540627676328
+      m_GuidHigh: 17514782543274057911
+    m_SerializedTextureGuid:
+      m_GuidLow: 15332338467980032775
+      m_GuidHigh: 16831948944615115067
+    m_Size: {x: 0.03, y: 0.021044776}
+    m_SpecifySize: 1
+    m_Name: moreStones
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4772198505251605953
+      m_GuidHigh: 5816349981559426443
+    m_SerializedTextureGuid:
+      m_GuidLow: 11883263929376020611
+      m_GuidHigh: 17177090421740347257
+    m_Size: {x: 0.03, y: 0.03}
+    m_SpecifySize: 1
+    m_Name: meme
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5654355949673229305
+      m_GuidHigh: 6435119675449647524
+    m_SerializedTextureGuid:
+      m_GuidLow: 7260871515602649533
+      m_GuidHigh: 15817048289937752139
+    m_Size: {x: 0.03, y: 0.036119998}
+    m_SpecifySize: 1
+    m_Name: dinosaurs
+    m_Texture: {fileID: 0}
