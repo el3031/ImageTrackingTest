@@ -16,14 +16,6 @@ public class DistanceMorph : MonoBehaviour
     void Start()
     {
         index = 0;
-        finalStage = false;
-        dict = new Dictionary<string, int>();
-        
-        for (int i = 0; i < otherObjects.Length; i++)
-        {
-            dict.Add(otherObjects[i].name, i);
-            Debug.Log(otherObjects[i].name + " " + i);
-        }
     }  
 
     // Update is called once per frame
@@ -34,8 +26,10 @@ public class DistanceMorph : MonoBehaviour
         for (int i = 0; i < distances.Length; i++)
         {
             distances[i] = Vector3.Distance(transform.position, otherObjects[i].transform.position);
+            Debug.Log("distance: " + distances[i] + ", " + i);
             if (distances[i] <= distanceThreshold)
             {
+                Debug.Log("transforming " + i + ", distance: " + distances[i]);
                 transform.GetChild(currentActiveChild).gameObject.SetActive(false);
                 transform.GetChild(i).gameObject.SetActive(true);
                 currentActiveChild = i;
