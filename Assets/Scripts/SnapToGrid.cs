@@ -5,7 +5,7 @@ using UnityEngine;
 public class SnapToGrid : MonoBehaviour
 {
     [SerializeField] private GameObject grid;
-    private bool snap = true;
+    public bool snap = false;
     
     // Start is called before the first frame update
     void Start()
@@ -14,6 +14,7 @@ public class SnapToGrid : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         if (snap)
@@ -24,6 +25,7 @@ public class SnapToGrid : MonoBehaviour
             transform.localPosition = snappedPos;
         }
     }
+    */
 
     void OnTriggerEnter(Collider other)
     {
@@ -31,7 +33,7 @@ public class SnapToGrid : MonoBehaviour
         {
             Debug.Log("snapping");
             snap = true;
-            this.transform.parent = grid.transform;
+            //this.transform.parent = grid.transform;
         }
         else
         {
@@ -44,7 +46,7 @@ public class SnapToGrid : MonoBehaviour
         if (other.CompareTag("Grid"))
         {
             snap = false;
-            this.transform.parent = null;
+            //this.transform.parent = null;
         }
     }
 }
