@@ -27,6 +27,7 @@ public class DistanceMorph : MonoBehaviour
     {
         index = 0;
         uifeatures = GameObject.Find("Canvas").GetComponent<UIFeatures>();
+        Debug.Log(uifeatures);
     }  
 
     // Update is called once per frame
@@ -37,7 +38,6 @@ public class DistanceMorph : MonoBehaviour
         for (int i = 0; i < distances.Length; i++)
         {
             distances[i] = Vector3.Distance(transform.position, otherObjects[i].transform.position);
-            Debug.Log("distance: " + distances[i] + ", " + i);
             if (distances[i] <= distanceThreshold)
             {
                 int currentYear = uifeatures.currentYear;
@@ -47,7 +47,6 @@ public class DistanceMorph : MonoBehaviour
                 if ((currentYear - yearTransformed) / 10 >= waitForDecades)
                 {
                     yearTransformed = currentYear;
-                    Debug.Log("transforming " + i + ", distance: " + distances[i]);
                     transform.GetChild(currentActiveChild).gameObject.SetActive(false);
                     transform.GetChild(i).gameObject.SetActive(true);
                     currentActiveChild = i;
