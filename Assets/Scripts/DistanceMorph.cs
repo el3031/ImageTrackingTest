@@ -1,13 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DistanceMorph : MonoBehaviour
 {
     [SerializeField] private GameObject[] otherObjects;
     [SerializeField] private float distanceThreshold;
+    
     private int index;
     private bool finalStage;
+
+    private int yearTransformed = 0;
+    
+    //feel free to change this value in the inspector
+    //the object can only be transformed once in x number of turns
+    //this prevents object from flipping randomly when the transforming object is kept next to it
+    [SerializeField] private int waitForDecades = 1;
+    private UIFeatures uifeatures;
 
     private Dictionary<string, int> dict;
     private int currentActiveChild = 0;
@@ -16,6 +26,7 @@ public class DistanceMorph : MonoBehaviour
     void Start()
     {
         index = 0;
+        uifeatures = GameObject.Find("Canvas").GetComponent<UIFeatures>();
     }  
 
     // Update is called once per frame
@@ -29,10 +40,18 @@ public class DistanceMorph : MonoBehaviour
             Debug.Log("distance: " + distances[i] + ", " + i);
             if (distances[i] <= distanceThreshold)
             {
-                Debug.Log("transforming " + i + ", distance: " + distances[i]);
-                transform.GetChild(currentActiveChild).gameObject.SetActive(false);
-                transform.GetChild(i).gameObject.SetActive(true);
-                currentActiveChild = i;
+                int currentYear = uifeatures.currentYear;
+                
+                //transform only if the distance is correct
+                //AND if the correct number of decades has passed
+                if ((currentYear - yearTransformed) / 10 >= waitForDecades)
+                {
+                    yearTransformed = currentYear;
+                    Debug.Log("transforming " + i + ", distance: " + distances[i]);
+                    transform.GetChild(currentActiveChild).gameObject.SetActive(false);
+                    transform.GetChild(i).gameObject.SetActive(true);
+                    currentActiveChild = i;
+                }
             }
         }
     }
