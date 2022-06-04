@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIFeatures : MonoBehaviour
 {
     [SerializeField] private Text year;
-    [SerializeField] private int currentYear;
+    public int currentYear;
     
     [SerializeField] private float co2MaxDelta;
     [SerializeField] private float co2MinDelta;
